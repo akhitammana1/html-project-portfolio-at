@@ -5,7 +5,7 @@
         <title>Madelyn Torff Project Portfolio by Akhilesh Tammana</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="./styles.css">
-        <link href="https://fonts.googleapis.com/css?family=Comfortaa%7CBaskervville%7CRaleway&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Comfortaa%7CNunito%7CRaleway&display=swap" rel="stylesheet" />
         <script src="https://kit.fontawesome.com/7a4430d807.js" crossorigin="anonymous"></script>
     </head>
     <body>
@@ -13,7 +13,6 @@
             <p class="nav-text">Madelyn Torff</p>
             <nav id="nav-bar">
                 <ul>
-                    <!-- <li class="nav-text"><a href="#intro">Intro</a></li> -->
                     <li class="nav-text"><a href="projectPortfolioWebpage_AboutUs.html">About</a></li>
                     <li class="nav-text"><a href="#projects">Projects</a></li>
                     <li class="nav-text"><a href="#contacts">Contacts</a></li>
@@ -26,8 +25,8 @@
                     <h4>UI/UX Designer</h4>
                     <h1 class="main-title">Hello, my name is Madelyn Torff</h1>
                     <p class="subtitle">Short text with details about you, what you do or your professional career. You can add more information on the about page.</p>
-                    <button href="#projects">Projects</button>
-                    <button href="linkedin.com">LinkedIn</button>
+                    <button id="intro-button-1" href="#projects">Projects</button>
+                    <button id="intro-button-2" href="linkedin.com">LinkedIn</button>
                 </div>
                 <div class="intro-photo">
                     <img id="main-image" alt="Madelyn Torff, a UI UX designer, smells a marigold flower while posing for a photo" src="./portfolioMainImage.png" />
@@ -35,9 +34,9 @@
             </section>
             
             <section class="main-section" id="projects">
-                <h2 class="projects">Projects</h2>
+                <h2 class="projects-header">Projects</h2>
                 <div class="underline"></div>
-                <div>
+                <div class="project-block">
                     <div class="subtile-body">
                         <h3 class="subtile-title">Project Name</h3>
                         <p class="subtile-paragraph">I created this personal project in order to show how to create an interface in Figma using a portfolio as an example.</p>
@@ -47,17 +46,17 @@
                         <img class="subtile-project" alt="project number one image " src="./subtilePhoto1.png" />
                     </div>
                 </div>
-                <div>
-                    <div class="subtile-image">
-                        <img class="subtile-project" alt="project number one image " src="./subtilePhoto2.png" />
-                    </div>
+                <div class="project-block">
                     <div class="subtile-body">
                         <h3 class="subtile-title">Project Name</h3>
                         <p class="subtile-paragraph">What was your role, your deliverables, if the project was personal, freelancing.</p>
                         <button class="subtile-button">View Project</button>
                     </div>
+                    <div class="subtile-image">
+                        <img class="subtile-project" alt="project number one image " src="./subtilePhoto2.png" />
+                    </div>
                 </div>
-                <div>
+                <div class="project-block">
                     <div class="subtile-body">
                         <h3 class="subtile-title">Project Name</h3>
                         <p class="subtile-paragraph">You can also add in this description the type of the project, if it was for web, mobile, electron.</p>
@@ -71,6 +70,8 @@
             </section>
             <section class="main-section" id="contacts">
                 <form method="post">
+                    <h2 class="projects-header">Projects</h2>
+                    <div class="underline"></div>
                     <div class="info">
                         <label for="name">Name:</label>
                         <input name="name" id="name" type="text" required />
@@ -83,7 +84,7 @@
                         <label for="messsage">Message:</label>
                         <textarea name="message" id="message" rows="5" cols="30" ></textarea>
                     </div>
-                    <button type="submit">Send</button>
+                    <button id="submit" type="submit">Send</button>
                 </form>
             </section>
         </main>
@@ -99,8 +100,9 @@
                     <i class="fa-solid fa-envelope"></i>
                 </a>
             </div>
-            <!-- <br /> -->
-            <p class="footer">Madelyn Torff 2021</p>
+            <br />
+            <p class="footer-text">Madelyn Torff 2021</p>
+            <img id="footer-image" src="./footerImage.png" />
         </footer>
     </body>
 </html>
