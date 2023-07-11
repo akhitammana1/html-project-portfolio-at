@@ -12,17 +12,44 @@
     }
   } 
 
+
+h1 {
+    color: var(--high-emphasis);
+    font-family: serif;
+    margin: 0;
+    font-size: 1vw;
+}
+
+h2 {
+
+}
+
+h3 {
+
+}
+
+h4 {
+    font-family: 'Comfortaa';
+    color: var(--brand-color1); 
+}
+
+p {
+    font-family: Georgia;
+}
+
 html {
     background-color: var(--brand-color2);
 }
 
-h1 {
-    color: var(--brand-color1);
-    ;
+main {
+    padding-right: 7%;
+    padding-left: 7%;
 }
 
 header {
-    width: 100%;
+    padding-right: 7%;
+    padding-left: 7%;
+    width: 86%;
     height: 50px;
     display: flex;
     justify-content: space-between;
@@ -32,12 +59,12 @@ header {
 
 .nav-text {
     color: var(--high-emphasis);
-    font-style: 'comfortaa';
+    font-family: 'Comfortaa';
 }
 
 nav {
-    width: 50%;
-    max-width: 300px;
+    width: 60%;
+    max-width: 500px;
     height: 50px;
 }
 
@@ -70,6 +97,24 @@ li > a {
 .underline {
     border-bottom: 3px solid var(--brand-color1);
 }
+
+/* .intro-text {
+    /* width: 40%; 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro-photo {
+    /* width: 50%; 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+} */
 
 .social-icons {
     display: grid;
